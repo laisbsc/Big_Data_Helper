@@ -1,0 +1,35 @@
+{
+  "name": "big_data_helper",
+  "version": "1.0.0",
+  "description": "simple Node.js application that plays uses Twilio public APIs to send and receive mmessages",
+  "main": "script.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "spotify": "^0.3.0",
+    "twilio": "^3.43.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": ".env && node index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laisbsc/Big_Data_Helper.git"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "node",
+    "js",
+    "simple",
+    "app"
+  ],
+  "author": "laisbsc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laisbsc/Big_Data_Helper/issues"
+  },
+  "homepage": "https://github.com/laisbsc/Big_Data_Helper#readme"
+}

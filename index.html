@@ -4,22 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <title>Test API</title>
+        <title>Big Data Helper</title>
 
         <link src="https://code.jquery.com/jquery-2.1.4.min.js"
-integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC"
-crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"/>
+            integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC"
+            crossorigin="anonymous"></script>
+        <script src="https://media.twiliocdn.com/sdk/js/chat/v3.3/twilio-chat.min.js"></script>
         <script src="script.js"></script>
-        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+        <link rel = "stylesheet" type = "text/css" href = "./style/style.css" />
     </head>
 
     <body>
-        <div class="search-container">
-            <title>Spotify recommendation-set</title>
-            <img class="artist_image">
-            <p class="artist_ID"></p>
-            <p class="artist_name"></p>
+        <div id="outside-body-container" class="wrapper">
+            <h1>Big Data Helper</h1>
+            <p class="website-purpose">Have you ever been overwhelmed by the feeling of not knowing
+                what you don't know? <br>
+                Fear no more! This is exaclty why this Helper came to your life. <br>
+                Here you can send feedback messages, topics that you're not sure how to handle, <br>
+                subjects that you're struggling with or suggestions to your Big Data teacher.</p>
+            <p>You can start now! <br> <br>To register your number, send a Whatsapp message to +13344715135.
+                <p><br>After the is setup, you can send a message from your own Whatsap direcly into this channel.</p>
+        
+        <div class="form-container">
+            <form id="feedback-sender" method="POST" action="/send-feedback" class="form-inline">
+                <label for="from">From: </label>
+                <input type="tel" class="form-control" id="sender-number" placeholder="+353865477221" value="+353838020216"><br>
+                <label for="sender-id">Your name: </label>
+                <input type="text" class="form-control" id="sender-name" placeholder="e. g. Adam Smith" value="Lais Carvalho"><br>
+                <label for="subject">Subject: </label>
+                <input type="text" class="form-control" id="message-subject" placeholder="e. g. Hadoop, week 7 slides, etc." value="Hadoop"><br>
+                <label for="subject">Message: </label>
+                <input type="text" class="form-control" id="message" placeholder="e. g. Hadoop, week 7 slides, etc." value="The installation of webservers is still confusing for me">
+                
+                <br><button id="send" type="submit" class="btn btn-primary">Submit</button>
+
+                <br><br>
+                
+            </form>
+            <br>
+            <form method="GET" action="/retrieve-messages" class="sec-form" id="sent-messages">
+                <button id="history" onclick="" class="btn">Retrieve previous messages</button>
+            </form>
         </div>
+
+
     </body>
+    <footer class="references">This webpage is powered by <a href="https://www.twilio.com/docs/usage/api">Twilio</a>'s public API requests.<br> More info 
+        <a href="//www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjVuuXZuIjpAhVCXq0KHd2MB98QFjAAegQIAhAB&url=https%3A%2F%2Fwww.twilio.com%2Fdocs%2Fusage%2Fapi&usg=AOvVaw10pq00X4rO7A-TaDT67mrx">
+            here</a>.
+    </footer>
+    <footer class="signature">
+        <p> Built with <3 by <a href="https://laiscarvalho.com">Lais Carvalho </p>
+        </footer>
 </html>

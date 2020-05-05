@@ -1,5 +1,6 @@
 #folder
-node_modules
+node_modules/
 
 #environment variables
-var.env
+*.env
+*.vscode/*

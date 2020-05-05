@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+
+html,body{
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    line-height: 1;
+}
+#outside-body-container{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center justify;
+}
+
+h1{
+    font-size: 65px;
+    font-family: 'VT323', monospace;
+    
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form-container {
+    padding: 10px;
+    width: 400px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: #fff;
+    flex-flow: column;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: #000;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1px;
+    background: linear-gradient(to right,#4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.references{
+    padding: 7px;
+}
